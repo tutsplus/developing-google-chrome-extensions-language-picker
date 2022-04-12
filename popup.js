@@ -10,7 +10,7 @@ chrome.storage.sync.get("language", ({ language }) => {
 function handleFlagClick(e) {
   const currentFlag = e.target.parentElement.querySelector('.currentFlag');
 
-  if(currentFlag && currentFlag !== event.target) {
+  if(currentFlag && currentFlag !== e.target) {
     currentFlag.classList.remove(".currentFlag")
   }
 
